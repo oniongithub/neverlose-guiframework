@@ -149,7 +149,9 @@ function oIcons.addIcon(size, compressedB64)
     return #icons;
 end
 
+local homeIcon = oIcons.addIcon(Vector2.new(64, 64), "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAWlBMVEUAAAD/^115 9ZMre9AAAAHXRSTlMA1iQX2RruyfZqBcUC4Fo48QfBs5Z7r6yFgFNQG+0YZk8AAAEFSURBVFjD7dHrioMwGITh0aQmxnjqYc+5/9tckF2GtKUlE+gv5+/n+4CKRwu9837oA8QZl7Y5I/ZN+ps9qD0Ftaeg9hTUnoLaU1B7CmpPQe0pqD0Ftaeg9hTUnoLaU1B7CmpPQe0pqD0Fvaeg9xT0ngJ7TWCvCew1gb0qsNfWGGB1qWIuoE9V6+HqgAG+Dlhqga76Feo/Yqj9jTCD3g8GAOJ0smN5PNrTFPG/thxoAWAHngPdNhXophXb1qmTgG+evxRgiTzHRQAagGt2YAdeAvyUA4cMCL4U8BHZ3kqBd+SbS4EZV/soAz5xs0vKdwS4Y8p3wZ21Z+v5yDhnbzjy4u255eUXgH8bZkpPRSIA^5 SUVORK5CYII=")
 local playerIcon = oIcons.addIcon(Vector2.new(64, 64), "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAolBMVEUAAAD/^211 8ELnaCAAAANXRSTlMApO769hry5b1PBtvKs6mZbjUJ6M+IVUZCItS3koFmOi8qJhMP3saOfGlhHgvWwq+WdUnFnmMoJgEAAAHFSURBVFjDrdbbdoIwEAXQBFBBVFAUrRe0Sr3f2/P/v9YnlkRgkqHdj7oyMq5DZkS1j7A7jOxoOnt8ihomHbxMPe7x0wyqb95TLCO8az4Z52MHJRLj830HZeyx4flGC+WstVmBHqq4Zg2gmlETM6LAVuilNggnfYEYlFBfIADlpi/QBaWjL9ABpaUv4IPS1BfYgvKlL3AD/haEHSg9fYEnKEd9gYEDwkboSeL8TBj4IF6GlVCw/0YpjAyGVSHYmN5pUXkKzW/2VQtF1kSYaxS78NeCYzBS42DfU8HUCKxX95L38+1swC2kO3TlaJx9MDBIUTK/NptBaWD60rbc3bFB/fQi6zxICy31sn7C6pl8yd1dsVo6sXIXY0Wix1D44Tn7ZrNXg+H0S3cKqxAdd36YjMPg6piEut0BQ7dYYAGWQyF6Flj89wIHMHmseaJfNpZgUxP5AFtMz2S9u1LAAttFeQlRwzm/WaOG/B2bQMFPwggk/cL1gxpG6nbLN1djwBfkCrioQf5nC3uQ9OuOhxryN+saNShzKgJJvzbze7DfZoPk51CVtsAybRfmMiuNsmxGe8YP4VesS+d40ZvaIDlDuffyj/8LmHDN9sGfb5YA^5 SUVORK5CYII=")
+local settingsIcon = oIcons.addIcon(Vector2.new(64, 64), "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAn1BMVEUAAAD/^207 8Kd3m4AAAANHRSTlMA+v0hwq5TGA6nWPfpdkIdCQTtt2Y8LfHXqp2NfG9OBuPf0KGUbFpJNAKZhnEvKBXzvGKw7cWKUQAAAg9JREFUWMPdl9lywjAMRW1n35oFSAIJS4GytYUu+v9v60xahiSWQDN563m0fC9YlpRE/Fcce+F2V9yF7bDlT5YEKOz2kl0ASOuJJZ+Y0KD825qvoMGcPP7zHlyRUfq7ltYSrniX+3o7gxZllLtuHpXttcy+p6/gMapKSf0YWGxIgzXwOFAGIfB4oQw+gceOMqiBh0HWEE//LChyYGGSBgemwdA6CEmDEfDIqRQo4DHD9W4JTBQ6GC4msAnfNflyvNK2BZ5vJMnZn0ot9DHutOS5/ixAYxpf44aFVFO1T67xL4mds9MxkcIO8peKWDI6LgKEzGlicyw2FT0sQJg3oRkSkVrDGZIsCOz6PKExJbviGYkgo3dHNnbGGxlnLItNBDtcglQ6lirSYKkbJKATNJGCdwSDnAwrJOLrBj7olEOvcdRENlh2YlYhVeQFg6WXMlkuxxFe5h3eAGH9d1np3Az0dp539Ao5puXcNqSTb22LdW+gBNv+a5hYfGg/4fnG0jV8T+rpd7AnowQus6PAiLj6dSJQkgx4kO+LJ56+FBQv3CcbhQ0s6qGP91fSYAssLNJgBSyKJaF/h4EvmntgsicMYsXTS4dM4tBbOFa9/6DM0+tm3VurxR0WYXvrNv5NbntkrR58OF1uIzbY6wNNnVz+R5etd/ooZ372KYDgq1vlIQTeQXCJ7Z3TT7CTin/KDxu7nvp1SVDrA^5 ElFTkSuQmCC")
 local fluidIcon = oIcons.addIcon(Vector2.new(180, 56), "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^5 ElFTkSuQmCC")
 
 --[[
@@ -292,6 +294,7 @@ local oFlags = {
     noDraw = 1, noMove = 2,
     dpiCompliant = 3, tabBar = 4,
     outlined = 5, openedMenu = 6,
+    customDrawn = 7,
 };
 
 function window(name, pos, size, tabSize, tabOffset, ...)
@@ -310,15 +313,15 @@ function window(name, pos, size, tabSize, tabOffset, ...)
     if (type(tabSize) ~= "number") then tabSize = 0; end
 
     table.insert(windowTable, { name = name, pos = pos, size = size, handle = { drag = false, dragPos = oVector2(0, 0) },
-                                noDraw = contains(1), noMove = contains(2), dpiCompliant = contains(3), openedMenu = contains(6),
-                                tabs = { tabs = {}, tabBar = contains(4), tabSize = tabSize, selected = 1, offset = tabOffset }, drawOutline = contains(5) });
+                                noDraw = contains(1), noMove = contains(2), dpiCompliant = contains(3), openedMenu = contains(6), customDraw = contains(7),
+                                tabs = { tabs = {}, tabBar = contains(4), tabSize = tabSize, selected = 1, offset = tabOffset, hovered = false }, drawOutline = contains(5) });
 
     return windowTable[#windowTable];
 end
 
 function tab(win, name, icon)
     if (type(name) ~= "string") then name = "New Tab"; end
-    table.insert(win.tabs.tabs, {name = name, hovered = false, icon = { hasIcon = (icon ~= nil), icon = icons[icon] }, controls = {} });
+    table.insert(win.tabs.tabs, {name = name, icon = { hasIcon = (icon ~= nil), icon = icons[icon] }, controls = {}, skippable = 0, skipped = 0 });
     return #win.tabs.tabs;
 end
 
@@ -353,13 +356,13 @@ local function handleWindowMovement() -- Window Movement
                         end
                         size = size * dpi;
 
-                        if (oMisc.pointInside(pos, pos + size, mousePos)) then
+                        if (oMisc.pointInside(pos, pos + size, mousePos) and not windowTable[i].tabs.hovered) then
                             pickup = true;
                             windowTable[i].handle = { drag = true, dragPos = oVector2(mousePos.x - pos.x, mousePos.y - pos.y) };
                         end
                     end
                 else
-                    if (windowTable[i].handle.drag) then
+                    if (windowTable[i].handle.drag and not windowTable[i].tabs.hovered) then
                         windowTable[i].pos = oVector2(mousePos.x - windowTable[i].handle.dragPos.x, mousePos.y - windowTable[i].handle.dragPos.y);
                     end
                 end
@@ -377,45 +380,96 @@ local function handleTabDrawing(w, dpi) -- Tab Control Drawing
         local usedSize = oVector2(0, 0);
 
         if (#wt.controls > 0) then
-            for i = 1, #wt.controls do
+            local usedY, overflow, rendered = 0, 0, 0;
+
+            for i = 1 + wt.skipped, #wt.controls do
                 local wtc = wt.controls[i];
 
-                local function basicControl(control, w, dpi, highlighted, name, description)
-                    local cPos, cSize = oVector2(pos.x + w.tabs.tabSize * dpi + 16 * dpi, pos.y + 12 * dpi), oVector2(size.x * dpi - 32 * dpi - w.tabs.tabSize * dpi, 45 * dpi);
-                    oRender.filledRectangle(cPos, cSize, oColor(22, 19, 20), 4 * dpi)
+                local function basicControl(control, w, dpi, highlighted, name, description, y)
+                    local cPos, cSize = oVector2(pos.x + w.tabs.tabSize * dpi + 16 * dpi, pos.y + 12 * dpi + usedY), oVector2(size.x * dpi - 32 * dpi - w.tabs.tabSize * dpi, 45 * dpi);
 
-                    local textSize, textSize2 = Render.CalcTextSize(name, math.floor(15 * dpi)), Render.CalcTextSize(description, math.floor(12 * dpi));
-                    
-                    if (w.drawOutline) then
-                        local newHeight = cPos.y + (4 * dpi + textSize.y)
+                    if (cPos.y + cSize.y > w.pos.y + w.size.y * dpi - 40 * dpi) then
+                        return { pos = cPos, size = cSize, pressed = false, overflow = true };
+                    else
+                        oRender.filledRectangle(cPos, cSize, oColor(22, 19, 20), 4 * dpi)
 
-                        if (highlighted) then
-                            oRender.rectangle(cPos, cSize, oColor(125, 125, 125), 4 * dpi)
-                            Render.Text(name, Vector2.new(cPos.x + 8 * dpi, cPos.y + 4 * dpi), Color.new(1, 1, 1), math.floor(15 * dpi))
-                            Render.Text(description, Vector2.new(cPos.x + 8 * dpi, newHeight + (cSize.y - (4 * dpi + textSize.y)) / 2 - textSize2.y / 2), Color.new(0.8, 0.8, 0.8), math.floor(12 * dpi))
-                        else
-                            oRender.rectangle(cPos, cSize, oColor(65, 65, 65), 4 * dpi)
-                            Render.Text(name, Vector2.new(cPos.x + 8 * dpi, cPos.y + 4 * dpi), Color.RGBA(65, 65, 65), math.floor(15 * dpi))
-                            Render.Text(description, Vector2.new(cPos.x + 8 * dpi, newHeight + (cSize.y - (4 * dpi + textSize.y)) / 2 - textSize2.y / 2), Color.RGBA(65, 65, 65), math.floor(12 * dpi))
+                        local textSize, textSize2 = Render.CalcTextSize(name, math.floor(15 * dpi)), Render.CalcTextSize(description, math.floor(12 * dpi));
+                        
+                        if (w.drawOutline) then
+                            local newHeight = cPos.y + (4 * dpi + textSize.y)
+
+                            if (highlighted) then
+                                oRender.rectangle(cPos, cSize, oColor(125, 125, 125), 4 * dpi)
+                                Render.Text(name, Vector2.new(cPos.x + 8 * dpi, cPos.y + 4 * dpi), Color.new(1, 1, 1), math.floor(15 * dpi))
+                                Render.Text(description, Vector2.new(cPos.x + 8 * dpi, newHeight + (cSize.y - (4 * dpi + textSize.y)) / 2 - textSize2.y / 2), Color.new(0.8, 0.8, 0.8), math.floor(12 * dpi))
+                            else
+                                oRender.rectangle(cPos, cSize, oColor(65, 65, 65), 4 * dpi)
+                                Render.Text(name, Vector2.new(cPos.x + 8 * dpi, cPos.y + 4 * dpi), Color.RGBA(65, 65, 65), math.floor(15 * dpi))
+                                Render.Text(description, Vector2.new(cPos.x + 8 * dpi, newHeight + (cSize.y - (4 * dpi + textSize.y)) / 2 - textSize2.y / 2), Color.RGBA(65, 65, 65), math.floor(12 * dpi))
+                            end
                         end
-                    end
 
-                    if (oMisc.pointInside(cPos, Vector2.new(cPos.x + cSize.x, cPos.y + cSize.y), mousePos)) then
-                        if (mouseOne.pressed) then
-                            return { pos = cPos, size = cSize, pressed = true };
+                        if (oMisc.pointInside(cPos, Vector2.new(cPos.x + cSize.x, cPos.y + cSize.y), mousePos)) then
+                            if (mouseOne.pressed) then
+                                return { pos = cPos, size = cSize, pressed = true, overflow = false };
+                            end
                         end
-                    end
 
-                    return { pos = cPos, size = cSize, pressed = false };
+                        return { pos = cPos, size = cSize, pressed = false, overflow = false };
+                    end
                 end
 
                 if (wtc.type == 1) then -- Checkbox
-                    local control = basicControl(wtc, w, dpi, wtc.value, wtc.name, wtc.description);
+                    local control = basicControl(wtc, w, dpi, wtc.value, wtc.name, wtc.description, usedY);
+                    usedY = usedY + control.size.y + 8 * dpi;
 
-                    if (control.pressed) then
-                        wtc.value = not wtc.value;
+                    if (control.overflow) then
+                        overflow = overflow + 1;
+                    else
+                        rendered = rendered + 1;
+
+                        if (control.pressed) then
+                            wtc.value = not wtc.value;
+                        end
                     end
                 end
+            end
+
+            wt.skippable = overflow;
+
+            local skipSize, backSize = Render.CalcTextSize("Next Page", math.floor(18 * dpi)), Render.CalcTextSize("Last Page", math.floor(18 * dpi));
+
+            local cSize = oVector2(size.x * dpi - 32 * dpi - w.tabs.tabSize * dpi, 45 * dpi);
+            local cPos = oVector2(pos.x + w.tabs.tabSize * dpi + 16 * dpi + (cSize.x / 2) + 8 * dpi, pos.y + size.y * dpi - 8 * dpi - skipSize.y);
+            local cPos2 = oVector2(pos.x + w.tabs.tabSize * dpi + 16 * dpi + (cSize.x / 2) - 8 * dpi - backSize.x, pos.y + size.y * dpi - 8 * dpi - backSize.y);
+
+            if (oMisc.pointInside(cPos, Vector2.new(cPos.x + skipSize.x, cPos.y + skipSize.y), mousePos)) then
+                Render.Text("Next Page", Vector2.new(cPos.x, cPos.y), Color.RGBA(255, 255, 255), math.floor(18 * dpi))
+
+                if (wt.skippable > 0) then
+                    if (mouseOne.pressed) then
+                        wt.skipped = wt.skipped + rendered;
+                    end
+                end
+            else
+                Render.Text("Next Page", Vector2.new(cPos.x, cPos.y), Color.RGBA(65, 65, 65), math.floor(18 * dpi))
+            end
+
+            if (oMisc.pointInside(cPos2, Vector2.new(cPos2.x + backSize.x, cPos2.y + backSize.y), mousePos)) then
+                Render.Text("Last Page", Vector2.new(cPos2.x, cPos2.y), Color.RGBA(255, 255, 255), math.floor(18 * dpi))
+
+                if (wt.skipped > 0) then
+                    if (mouseOne.pressed) then
+                        local pageMax = math.floor(w.size.y * dpi / (45 * dpi))
+                        if (wt.skipped >= pageMax) then
+                            wt.skipped = wt.skipped - pageMax;
+                        else
+                            wt.skipped = 0;
+                        end
+                    end
+                end
+            else
+                Render.Text("Last Page", Vector2.new(cPos2.x, cPos2.y), Color.RGBA(65, 65, 65), math.floor(18 * dpi))
             end
         end
     end
@@ -450,16 +504,18 @@ local function handleWindowDrawing() -- Window Drawing
 
             if (w.tabs.tabBar) then
                 local logoSize = oVector2(180, 56);
-                logoSize.x = w.tabs.tabSize * dpi - 8 * dpi
+                logoSize.x = w.tabs.tabSize * dpi - 20 * dpi
                 logoSize.y = (logoSize.x * (logoSize.y / logoSize.x)) * dpi
 
-                Render.Image(icons[fluidIcon], Vector2.new(pos.x + 4 * dpi, pos.y + 4 * dpi), Vector2.new(logoSize.x, logoSize.y))
-                oRender.filledRectangle(oVector2(pos.x + 4 * dpi, pos.y + 12 * dpi + logoSize.y), oVector2(logoSize.x, 2), oColor(125, 125, 125))
+                Render.Image(icons[fluidIcon], Vector2.new(pos.x + 10 * dpi, pos.y + 10 * dpi), Vector2.new(logoSize.x, logoSize.y))
+                oRender.filledRectangle(oVector2(pos.x + 10 * dpi, pos.y + 20 * dpi + logoSize.y), oVector2(logoSize.x, 2), oColor(125, 125, 125))
 
-                local tabOffset = oVector2(0, 10 * dpi + logoSize.y);
+                local tabOffset = oVector2(0, 26 * dpi + logoSize.y);
                 if (w.tabs.offset) then
                     tabOffset.y = tabOffset.y + w.tabs.offset;
                 end
+
+                w.tabs.hovered = false;
 
                 if (#w.tabs.tabs > 0) then
                     for i = 1, #w.tabs.tabs do
@@ -467,6 +523,7 @@ local function handleWindowDrawing() -- Window Drawing
                         local xOffset = 0;
 
                         if (oMisc.pointInside(Vector2.new(pos.x + 8 * dpi, pos.y + 8 * dpi + tabOffset.y), Vector2.new(pos.x + w.tabs.tabSize * dpi - 8 * dpi, pos.y + 8 * dpi + tabOffset.y + textSize.y), mousePos)) then
+                            w.tabs.hovered = true;
                             w.tabs.tabs[i].hovered = true;
 
                             if (mouseOne.pressed) then
@@ -503,10 +560,19 @@ local function handleWindowDrawing() -- Window Drawing
 end
 
 local newWindow = window("peepee", oVector2(10, 10), oVector2(800, 450), 800 / 4, 0, oFlags.dpiCompliant, oFlags.tabBar, oFlags.outlined, oFlags.openedMenu);
-local tab1 = tab(newWindow, "Test", playerIcon);
-local tab2 = tab(newWindow, "Peepee");
+local tab1 = tab(newWindow, "Home", homeIcon);
+local tab2 = tab(newWindow, "Settings", settingsIcon);
+local tab3 = tab(newWindow, "Booter 9000", playerIcon);
 
-local checkbox1 = checkbox(newWindow, tab1, "Peepee", "Test Checkbox", true);
+local checkbox1 = checkbox(newWindow, tab1, "Peepee", "Test Checkbox", false);
+local checkbox2 = checkbox(newWindow, tab1, "Peepee2", "Test Checkbox", false);
+local checkbox3 = checkbox(newWindow, tab1, "Peepee3", "Test Checkbox", false);
+local checkbox4 = checkbox(newWindow, tab1, "Peepee4", "Test Checkbox", false);
+local checkbox5 = checkbox(newWindow, tab1, "Peepee5", "Test Checkbox", false);
+local checkbox6 = checkbox(newWindow, tab1, "Peepee6", "Test Checkbox", false);
+local checkbox7 = checkbox(newWindow, tab1, "Peepee7", "Test Checkbox", false);
+local checkbox8 = checkbox(newWindow, tab1, "Peepee8", "Test Checkbox", false);
+local checkbox9 = checkbox(newWindow, tab1, "Peepee9", "Test Checkbox", false);
 
 oMisc.registerCallback("draw", function()
     handleWindowMovement();
